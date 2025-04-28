@@ -9,8 +9,8 @@ describe('Sign In page', () => {
     cy.get('a[href = "/user/login"]').should('contain.text', 'Sign in').click();
 
     // Type email and password and click sign in
-    cy.get('input[placeholder="Email"]').type('jananiraja1405@gmail.com');
-    cy.get('input[placeholder="Password"]').type('India@123');
+    cy.get('input[placeholder="Email"]').type('abc@gmail.com');
+    cy.get('input[placeholder="Password"]').type('dummy2');
     cy.get('button[type="submit"]').contains('Sign in').click();
 
     // assert username after sign in
